@@ -1,184 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
     <title>Admin Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <h2 class="icondashboard"><img src="icons/dashboard-icon.svg" alt="">Dashboard</h2>
-            <ul class="menu">
-                <li><a href="#"><img src="icons/home-icon.svg" alt="">Home</li></a>
-                <li><a href="#"><img src="icons/profile-icon.svg" alt="">Profile</li></a>
-                <li><a href="#"><img src="icons/message-icon.svg" alt="">Messages</li></a>
-                <li><a href="#"><img src="icons/history-icon.svg" alt="">History</li></a>
-                <li><a href="#"><img src="icons/task-icon.svg" alt="">Tasks</li></a>
-                <li><a href="#"><img src="icons/community-icon.svg" alt="">Communities</li></a>
+      <div class="sidebar">
+        <h2 class="icondashboard">
+          <img src="icons/dashboard-icon.svg" alt="" />Dashboard
+        </h2>
+        <ul class="menu">
+          <li>
+            <a href="#"
+              ><img src="icons/home-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Home</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/profile-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Profile</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/message-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Messages</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/history-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >History</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/task-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Tasks</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/community-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Communities</span
+              ></a
+            >
+          </li>
 
-                <li class="spacer"></li>
+          <li class="spacer"></li>
 
-                <li><a href="#"><img src="icons/settings-icon.svg" alt="">Settings</li></a>
-                <li><a href="#"><img src="icons/support-icon.svg" alt="">Support</li></a>
-                <li><a href="#"><img src="icons/privacy-icon.svg" alt="">Privacy</li></a>
-                </ul>
+          <li>
+            <a href="#"
+              ><img src="icons/settings-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Settings</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/support-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Support</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/privacy-icon.svg" alt="" /><span
+                class="sidebar-text"
+                >Privacy</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <div class="header-upper">
+          <div class="searchbar">
+            <img src="icons/search-icon.svg" alt="" />
+            <input type="text" />
+          </div>
+          <div class="account-icon-and-name">
+            <a href=""
+              ><img id="notificon" src="icons/notification-icon.svg" alt=""
+            /></a>
+            <img
+              src="icons/profilepic.jpg"
+              alt=""
+              style="height: 40px; border-radius: 50px"
+            />
+            <div><p>Vi</p></div>
+          </div>
         </div>
 
-        <div class="header">
-            <div class="header-upper">
-                <div class="searchbar">
-                    <img src="icons/search-icon.svg" alt="">
-                    <input type="text">
-                </div>
-                <div class="account-icon-and-name">
-                    <img src="icons/notification-icon.svg" alt="">
-                    <img src="icons/profilepic.jpg" alt="" style="height: 40px; border-radius: 50px;">
-                    <div><p>Vi</p></div>
-                </div>
+        <div class="header-lower">
+          <div class="accountinfo">
+            <img
+              src="icons/profilepic.jpg"
+              alt=""
+              style="height: 55px; border-radius: 50px"
+            />
+            <div>
+              <p>Hi there,</p>
+              <p>Violet (@vivi)</p>
             </div>
+          </div>
+          <div class="buttons-for-header">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
 
-            <div class="header-lower">
-                <div class="accountinfo">
-                    <img src="icons/profilepic.jpg" alt="" style="height: 55px; border-radius: 50px;">
-                    <div>
-                        <p>Hi there,</p>
-                        <p>Violet (@vivi)</p>
-                    </div>
-                </div>
-                <div class="buttons-for-header">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+      <div class="main-content">
+        <div class="projects">
+          <h3 class="projects-title">Your Projects</h3>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
             </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
+            </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
+            </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
+            </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
+            </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <p><b>Super Cool Project</b></p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, placeat?
+              </p>
+            </div>
+            <div class="icons-for-projects">
+              <img src="icons/staricon.svg" alt="" />
+              <img src="icons/eyeicon.svg" alt="" />
+              <img src="icons/forkicon.svg" alt="" />
+            </div>
+          </div>
         </div>
 
-        <div class="main-content">
-            <div class="projects">
-                <h3 class="projects-title">Your Projects</h3>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-text">
-                        <p><b>Super Cool Project</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, placeat?</p>
-                    </div>
-                    <div class="icons-for-projects">
-                        <img src="icons/staricon.svg" alt="">
-                        <img src="icons/eyeicon.svg" alt="">
-                        <img src="icons/forkicon.svg" alt="">
-                    </div>
-                </div>
+        <div class="right-main-content">
+          <div class="announcements">
+            <h3 class="announcements-title">Announcements</h3>
+            <div class="announce-items">
+              <div class="announce-item">
+                <p><b>Site Maintenance</b></p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, odio?
+                </p>
+              </div>
+              <div class="announce-item">
+                <p><b>Community Share Day</b></p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, odio?
+                </p>
+              </div>
+              <div class="announce-item">
+                <p><b>Updated Privacy Policy</b></p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis, odio?
+                </p>
+              </div>
             </div>
-
-            <div class="right-main-content">
-                <div class="announcements">
-                    <h3 class="announcements-title">Announcements</h3>
-                    <div class="announce-items">
-                        <div class="announce-item">
-                            <p><b>Site Maintenance</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odio?</p>
-                        </div>
-                        <div class="announce-item">
-                            <p><b>Community Share Day</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odio?</p>
-                        </div>
-                        <div class="announce-item">
-                            <p><b>Updated Privacy Policy</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odio?</p>
-                        </div>
-                    </div>
+          </div>
+          <div class="trending">
+            <h3 class="trending-title">Trending</h3>
+            <div class="trending-items">
+              <div class="trending-item">
+                <img src="icons/jinxicon.jpg" alt="" />
+                <div>
+                  <p><b>@Jinx</b></p>
+                  <p>Sis</p>
                 </div>
-                <div class="trending">
-                    <h3 class="trending-title">Trending</h3>
-                    <div class="trending-items">
-                        <div class="trending-item">
-                            <img src="icons/jinxicon.jpg" alt="">
-                            <div>
-                                <p><b>@Jinx</b></p>
-                                <p>Sis</p>
-                            </div>
-                        </div>
-                        <div class="trending-item">
-                            <img src="icons/caiticon.jpg" alt="">
-                            <div>
-                                <p><b>@Cait</b></p>
-                                <p>Decorated Officer</p>
-                            </div>
-                        </div>
-                        <div class="trending-item">
-                            <img src="icons/jaceicon.jpg" alt="">
-                            <div>
-                                <p><b>@Jace</b></p>
-                                <p>Inventor</p>
-                            </div>
-                        </div>
-                        <div class="trending-item">
-                            <img src="icons/victoricon.jpg" alt="">
-                            <div>
-                                <p><b>@Victor</b></p>
-                                <p>Inventor</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="trending-item">
+                <img src="icons/caiticon.jpg" alt="" />
+                <div>
+                  <p><b>@Cait</b></p>
+                  <p>Decorated Officer</p>
                 </div>
+              </div>
+              <div class="trending-item">
+                <img src="icons/jaceicon.jpg" alt="" />
+                <div>
+                  <p><b>@Jace</b></p>
+                  <p>Inventor</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="icons/victoricon.jpg" alt="" />
+                <div>
+                  <p><b>@Victor</b></p>
+                  <p>Inventor</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
